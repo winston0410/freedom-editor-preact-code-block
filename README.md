@@ -1,8 +1,8 @@
 # Freedom Editor Preact Code Block
 
-[![License](https://img.shields.io/badge/license-MIT-blue)](https://img.shields.io/github/license/winston0410/freedom-editor) [![Maintainability](https://api.codeclimate.com/v1/badges/00f1edf8bd3168a6da09/maintainability)](https://codeclimate.com/github/winston0410/freedom-editor-preact-code-block/maintainability) [![Known Vulnerabilities](https://snyk.io/test/github/winston0410/freedom-editor-preact-code-block/badge.svg?targetFile=package.json)](https://snyk.io/test/github/winston0410/freedom-editor-preact-code-block?targetFile=package.json) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/dda5900eec4742ad92066df32044f450)](https://www.codacy.com/manual/winston0410/freedom-editor-preact-code-block?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=winston0410/freedom-editor-preact-code-block&amp;utm_campaign=Badge_Grade)
+[![License](https://img.shields.io/badge/license-MIT-blue)](https://img.shields.io/github/license/winston0410/freedom-editor) [![Maintainability](https://api.codeclimate.com/v1/badges/60e1e3c1243a117d8e7f/maintainability)](https://codeclimate.com/github/winston0410/freedom-editor-preact-code-block/maintainability) [![Known Vulnerabilities](https://snyk.io/test/github/winston0410/freedom-editor-preact-code-block/badge.svg?targetFile=package.json)](https://snyk.io/test/github/winston0410/freedom-editor-preact-code-block?targetFile=package.json) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/f1af9722eab64980abfe8c8ca2192eea)](https://www.codacy.com/manual/winston0410/freedom-editor-preact-code-block?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=winston0410/freedom-editor-preact-code-block&amp;utm_campaign=Badge_Grade)
 
-A code block built with [Reef](https://github.com/cferdinandi/reef) for Freedom Editor.
+A code block built with [Preact](https://preactjs.com/) for Freedom Editor.
 
 ## Installation
 
