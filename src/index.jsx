@@ -31,7 +31,7 @@ class Code {
     blockContainer.dataset.blockType = this.constructor.name
 
     render(<pre>
-      <code contenteditable>${getSavedData(savedData)}</code>
+      <code contenteditable>{getSavedData(savedData)}</code>
     </pre>, blockContainer)
 
     return blockContainer
