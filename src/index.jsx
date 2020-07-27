@@ -1,9 +1,8 @@
-const {
+import {
   getSavedData
-} = require('./utilities/helper.js')
+} from './utilities/helper.js'
 
-require('preact/debug')
-const { h, Component, render } = require('preact')
+import { h, Component, render } from 'preact'
 
 class Code {
   constructor (customOptions) {
