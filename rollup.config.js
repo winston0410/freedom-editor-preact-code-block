@@ -5,11 +5,11 @@ const {
   nodeResolve
 } = require('@rollup/plugin-node-resolve')
 const commonjs = require('@rollup/plugin-commonjs')
-// const peerDepsExternal = require('rollup-plugin-peer-deps-external')
+const { babel } = require('@rollup/plugin-babel')
 
 export default [{
-  input: 'src/index.js',
-  output: {
+  input: 'src/index.jsx',
+  output: [{
     file: 'dist/index.esm.js',
     format: 'esm',
     plugins: [
@@ -24,16 +24,7 @@ export default [{
       })
     ]
   },
-  plugins: [
-    nodeResolve({}),
-    commonjs({
-      include: ['./src/**', 'node_modules/**']
-    })
-  ]
-},
-{
-  input: 'src/index.js',
-  output: {
+  {
     file: 'dist/index.cjs.js',
     format: 'cjs',
     plugins: [
@@ -48,11 +39,20 @@ export default [{
       })
     ]
   },
+  {
+    file: 'test/index.esm.js',
+    format: 'esm',
+    plugins: []
+  }],
   plugins: [
-    nodeResolve({}),
+    babel({
+      babelHelpers: 'runtime',
+      skipPreflightCheck: true
+    }),
+    nodeResolve(),
     commonjs({
       include: ['./src/**', 'node_modules/**']
     })
-  ]
-}
-]
+  ],
+  external: [/@babel\/runtime/]
+}]
