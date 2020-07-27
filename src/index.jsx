@@ -4,7 +4,6 @@ const {
 
 require('preact/debug')
 const { h, Component, render } = require('preact')
-const { html } = require('htm/preact')
 
 class Code {
   constructor (customOptions) {
@@ -32,9 +31,9 @@ class Code {
     blockContainer.classList.add('freedom-editor-blocks', `${this.constructor.name}-block`)
     blockContainer.dataset.blockType = this.constructor.name
 
-    render(html`<pre>
-        <code contenteditable>${getSavedData(savedData)}</code>
-        </pre>`, blockContainer)
+    render(<pre>
+      <code contenteditable>${getSavedData(savedData)}</code>
+    </pre>, blockContainer)
 
     return blockContainer
   }

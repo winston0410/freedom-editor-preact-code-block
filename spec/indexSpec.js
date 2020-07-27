@@ -6,7 +6,7 @@ global.document = dom.window.document
 global.window = dom.window
 global.navigator = dom.window.navigator
 
-const { Code } = require('../src/index.js')
+const { Code } = require('../test/index.esm.js')
 
 describe('Test block essential functionalities:', () => {
   const codeBlock = new Code()
